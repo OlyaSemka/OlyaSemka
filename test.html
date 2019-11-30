@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	//Посчитать сумму в массиве через while и for: const arr = [[1,2,3], [4,5,6], [7,8,9]]
+// Решение через while:
+
+	let arr =  [
+		[1,2,3], 
+		[4,5,6], 
+		[7,8,9]];
+
+	let sum = 0;
+	let i = 0;
+	let j = 0;
+	while (i < arr.length ) {
+		while (j < arr[i].length) {
+			sum+=arr[i][j];
+			j++;
+		}
+		i++;
+	} console.log(sum);
+
+
+
+
+
+	// Решение через for:
+	/*	let arr = [
+			[1,2,3], 
+			[4,5,6], 
+			[7,8,9]
+			];
+		let sum =0;	
+		for ( let i=0; i<arr.length; i++){
+			for (let j = 0; j < arr[i].length; j++) {
+				sum+=arr[i][j];
+			}
+		};
+		console.log(sum);*/
+
+
+		//нужно создать цикл который будет бегать по массиву и формировать строку, если елемент массива четный, то записываем в строку значение 'even', не четный = 'odd', между фразами вставляем разделитель  '+'Тоесть на выходе у тебя должно получится 'even + even + odd' и тд
+
+	/*	let arr = [4,12,97,36,0,11,63,89,3,56,74,22,12,9];
+		let even = '';
+		let odd ='';
+		let res = '';
+		for (let i=0; i<arr.length; i++) {
+				if (arr[i]%2==0) {
+					arr[i] = 'even' ;
+				} else if (arr[i]%2!=0) {
+					arr [i]= 'odd';
+				} 
+			};	
+		console.log (arr.join('+'));*/	
+
+		//нужно сделать так чтоб это модальное окно выводилось бесконечно пока я не ввел число 13
+	/*	let num = 0;
+		while (num != 13 && num != null){
+			num = + prompt ('Enter a number');
+		}*/
+
+		
+
+
+
+	</script>
+</body>
+</html>
